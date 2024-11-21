@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense tracker website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="./javascript.js" defer></script>
+</head>
+<body>
+
+    <div class="hero-container">
+        <header>
+            <div class="hamburger" id="hamburger">
+                &#9776; <!-- Unicode character for hamburger icon -->
+            </div>
+            <nav>
+                <ul id="nav-list">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="add_expense.html">add expense</a></li>
+                    <li><a href="view_expense.html">view expense</a></li>
+                    <li><a href="edit_expense.html">edit expense</a></li>
+                </ul>
+            </nav>
+            <!-- <div class="login-register">
+               <button class="login-btn" id="login"><a href="login.html">login</a></button>
+               <button class="signup-btn" id="register"><a href="register.html">sign up</a></button>
+    
+            </div> -->
+        </header>
+    <section class="form-container">
+        <h2>Update Expense Details</h2>
+        <form action="update_expense.php" method="POST">
+            <input type="hidden" name="expense_id" value="123">
+
+            <label for="amount">Amount</label>
+            <input type="number" id="amount" name="amount" value="50.00" required>
+
+            <label for="category">Category</label>
+            <input type="text" id="category" name="category" value="Food" required>
+
+            <label for="payment_method">Payment Method</label>
+            <input type="text" id="payment_method" name="payment_method" value="Cash" required>
+
+            <label for="description">Description</label>
+            <textarea id="description" name="description" required>Lunch at restaurant</textarea>
+
+            <button type="submit">Update Expense</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Expense Tracker. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense tracker website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="./javascript.js" defer></script>
+</head>
+<body>
+
+    <div class="hero-container">
+        <header>
+            <div class="hamburger" id="hamburger">
+                &#9776; <!-- Unicode character for hamburger icon -->
+            </div>
+            <nav>
+                <ul id="nav-list">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="add_expense.html">add expense</a></li>
+                    <li><a href="view_expense.html">view expense</a></li>
+                    <li><a href="edit_expense.html">edit expense</a></li>
+                </ul>
+            </nav>
+            <!-- <div class="login-register">
+               <button class="login-btn" id="login"><a href="login.html">login</a></button>
+               <button class="signup-btn" id="register"><a href="register.html">sign up</a></button>
+    
+            </div> -->
+        </header>
+    <section class="form-container">
+        <h2>Create your account</h2>
+        <form action="" method="POST">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" required>
+            
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit">Register</button>
+            <p>Already have an account? <a href="login.html">Login</a></p>
+        </form>
+    </section>
+    <footer>
+        <p>© 2024 Expense Tracker. All rights reserved.</p>
+    </footer>
+</body>
+</html>
